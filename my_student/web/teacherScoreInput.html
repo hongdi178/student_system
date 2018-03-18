@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生成绩录入</title>
+</head>
+<body>
+<center>
+    <?php include_once "../menu.php";
+    header("Content-type: text/html; charset=utf-8");?>
+    <h3>学生成绩录入</h3>
+
+    <form id="addstu" name="addstu" method="post" action="../scoreInput.php">
+        <table>
+            <tr>
+                <td>学生ID</td>
+                <td><input id="number" name="student_number" type="text"></td>
+            </tr>
+            <tr>
+                <td>课程ID</td>
+                <td><input id="name" name="course_number" type="text"/></td>
+
+            </tr>
+            <tr>
+                <td>成绩</td>
+                <td><input id="credit" name="score" type="text"></td>
+            </tr>
+            <tr>
+                <td> 创建时间</td>
+                <td> <input id="create_time"  name="create_time" type="text"></td>
+            </tr>
+            <tr>
+                <td>更新时间</td>
+                <td><input id="begin_time" name="update_time" type="text"> </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="增加"/>&nbsp;&nbsp;
+                    <input type="reset" value="重置"/>
+                    <!--<a href="../teacher_file.php">返回</a>-->
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
